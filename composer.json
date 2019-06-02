@@ -1,5 +1,5 @@
 {
-    "name": "jmichaelward/wordcamp-website",
+    "name": "jmichaelward/wordcamp-example-wp-composer",
     "require": {
         "composer/installers": "^1.6",
         "jmichaelward/wp-installer-plugin": "~0.1.0",
