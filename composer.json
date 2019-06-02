@@ -1,0 +1,35 @@
+{
+    "name": "jmichaelward/wordcamp-website",
+    "require": {
+        "composer/installers": "^1.6",
+        "jmichaelward/wp-installer-plugin": "~0.1.0",
+        "wpackagist-plugin/advanced-custom-fields": "^5.8",
+        "webdevstudios/wd_s": "dev-master",
+        "webdevstudios/oops-wp": "^0.2"
+    },
+    "require-dev": {
+        "jmichaelward/wp-setup": "^2.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JMichaelWard\\WordCamp\\": [ "wp-content/plugins/wordcamp-content/src" ]
+        }
+    },
+    "config": {
+        "vendor-dir": "wp-content/mu-plugins/vendor"
+    },
+    "extra": {
+        "install-paths": {
+            "wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+            "wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}": ["type:wordpress-theme"]
+        }
+    }
+}
